@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personnalise ton T-Shirt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>👕 Personnalise ton t-shirt</h1>
+    <div class="editor">
+      <div class="mockup">
+        <img src="images/tshirt.png" alt="T-shirt" class="tshirt" />
+        <div id="preview-text">Ton texte ici</div>
+      </div>
+      <div class="controls">
+        <label>Texte :</label>
+        <input type="text" id="text-input" placeholder="Écris ton message..." />
+
+        <label>Couleur :</label>
+        <input type="color" id="color-input" value="#000000" />
+
+        <label>Taille :</label>
+        <input type="range" id="size-input" min="10" max="36" value="16" />
+
+        <label>Police de broderie :</label>
+        <select id="font-select">
+          <option>Block</option>
+          <option>Roman</option>
+          <option>Serif Block</option>
+          <option>Script</option>
+          <option>Times</option>
+          <option>Bauhaus</option>
+          <option>Brush Script</option>
+          <option>Upright Script</option>
+          <option>Arial Rounded</option>
+          <option>Gotham</option>
+          <option>Helvetica</option>
+          <option>Century Gothic</option>
+          <option>Swiss Block</option>
+          <option>Univers</option>
+          <option>Balloon</option>
+          <option>Curlz</option>
+          <option>Kids</option>
+          <option>Comic</option>
+          <option>Fun</option>
+          <option>Graffiti</option>
+          <option>Handwriting</option>
+          <option>Cursive</option>
+          <option>Calligraphy</option>
+          <option>Brush</option>
+          <option>Scribe</option>
+          <option>Courier</option>
+          <option>Typewriter</option>
+          <option>Engineering</option>
+          <option>Digital</option>
+        </select>
+      </div>
+    </div>
+    <button id="download-btn">Télécharger l'aperçu</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
